@@ -1,0 +1,19 @@
+CREATE TABLE Products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    stock_quantity INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO Products (name, description, price, stock_quantity, created_at)
+VALUES
+    ('Samsung Galaxy A54', 'Affordable smartphone with 5G capability, 128GB storage, and a 50MP camera.', 20000.00, 50, NOW()),
+    ('Nike Air Max 270', 'Stylish and comfortable running shoes available in various sizes.', 7500.00, 100, NOW()),
+    ('Xiaomi Smart Vacuum Cleaner', 'Automatic smart vacuum cleaner with Wi-Fi and mobile app control.', 12000.00, 30, NOW()),
+    ('Casio G-Shock Watch', 'Durable and water-resistant wristwatch with stopwatch functionality.', 4500.00, 75, NOW()),
+    ('Unilever Dishwashing Liquid (1L)', 'Effective grease-cutting formula for sparkling clean dishes.', 150.00, 200, NOW()),
+    ('SM Home Bedsheet Set', 'Soft and comfortable queen-size bedsheet set with pillowcases.', 1000.00, 80, NOW()),
+    ('Asus ROG Gaming Laptop', 'High-performance gaming laptop with NVIDIA RTX 3070 and 16GB RAM.', 95000.00, 10, NOW()),
+    ('Lazada E-Gift Card', 'E-Gift card for online shopping on Lazada.', 500.00, 500, NOW());
